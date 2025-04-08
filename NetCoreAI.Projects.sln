@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechToText", "SpeechToTex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageGeneration", "ImageGeneration\ImageGeneration.csproj", "{FC75E632-9E35-4DD6-89A2-0EDFBB54711D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesseractOcr", "TesseractOcr\TesseractOcr.csproj", "{2414279D-AF18-4AA9-B725-778E72E759FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{FC75E632-9E35-4DD6-89A2-0EDFBB54711D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC75E632-9E35-4DD6-89A2-0EDFBB54711D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC75E632-9E35-4DD6-89A2-0EDFBB54711D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2414279D-AF18-4AA9-B725-778E72E759FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2414279D-AF18-4AA9-B725-778E72E759FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2414279D-AF18-4AA9-B725-778E72E759FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2414279D-AF18-4AA9-B725-778E72E759FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
