@@ -1,6 +1,8 @@
 ﻿using System.Text;
 using Newtonsoft.Json;
 
+namespace ImageGeneration;
+
 class Program
 {
     static async Task Main(string[] args)

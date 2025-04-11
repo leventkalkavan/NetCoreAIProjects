@@ -1,6 +1,8 @@
 ﻿using System.Text;
 using System.Text.Json;
 
+namespace OpenAIChat;
+
 class Program
 {
     static async Task Main(string[] args)

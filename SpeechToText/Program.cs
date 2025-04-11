@@ -2,6 +2,8 @@
 using AssemblyAI;
 using AssemblyAI.Transcripts;
 
+namespace SpeechToText;
+
 class Program
 {
     static async Task Main(string[] args)

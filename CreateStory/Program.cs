@@ -1,6 +1,8 @@
 ﻿using System.Text;
 using System.Text.Json;
 
+namespace CreateStory;
+
 class Program
 {
     private static readonly string apiKey = "apiKey";
@@ -22,38 +24,38 @@ class Program
             string length = Console.ReadLine() ?? "";
 
             string prompt = $"""
-                Lütfen aşağıdaki kriterlere uygun bir hikaye yaz:
+                             Lütfen aşağıdaki kriterlere uygun bir hikaye yaz:
 
-                TÜR: {genre}
-                KARAKTER: {character}
-                MEKAN: {setting}
-                UZUNLUK: {length}
+                             TÜR: {genre}
+                             KARAKTER: {character}
+                             MEKAN: {setting}
+                             UZUNLUK: {length}
 
-                Hikaye yapısı şöyle olmalıdır:
+                             Hikaye yapısı şöyle olmalıdır:
 
-                GİRİŞ (3-4 cümle):
-                - Karakteri tanıt
-                - Mekanı detaylı anlat
-                - Karakterin günlük hayatını özetle
+                             GİRİŞ (3-4 cümle):
+                             - Karakteri tanıt
+                             - Mekanı detaylı anlat
+                             - Karakterin günlük hayatını özetle
 
-                GELİŞME (4-5 cümle):
-                - Beklenmedik bir olay olsun
-                - Karakterin karşılaştığı zorlukları anlat
-                - Duygusal ve fiziksel detaylar ekle
+                             GELİŞME (4-5 cümle):
+                             - Beklenmedik bir olay olsun
+                             - Karakterin karşılaştığı zorlukları anlat
+                             - Duygusal ve fiziksel detaylar ekle
 
-                SONUÇ (3-4 cümle):
-                - Olayın nasıl çözüldüğünü anlat
-                - Karakterin nasıl değiştiğini göster
-                - Hikayeyi tatmin edici bir şekilde bitir
+                             SONUÇ (3-4 cümle):
+                             - Olayın nasıl çözüldüğünü anlat
+                             - Karakterin nasıl değiştiğini göster
+                             - Hikayeyi tatmin edici bir şekilde bitir
 
-                ÖNEMLİ KURALLAR:
-                - Sadece Türkçe karakterler kullan
-                - Tekrar eden cümleler kullanma
-                - Her bölüm için belirtilen cümle sayısına uy
-                - Diyalog ekle
-                - Duygusal ve fiziksel detaylar kullan
-                - Hikayeyi akıcı ve ilgi çekici yap
-                """;
+                             ÖNEMLİ KURALLAR:
+                             - Sadece Türkçe karakterler kullan
+                             - Tekrar eden cümleler kullanma
+                             - Her bölüm için belirtilen cümle sayısına uy
+                             - Diyalog ekle
+                             - Duygusal ve fiziksel detaylar kullan
+                             - Hikayeyi akıcı ve ilgi çekici yap
+                             """;
 
             string story = await GenerateStory(prompt);
             Console.WriteLine("\n--- AI Tarafında Oluşturulan Hikaye ---\n");
@@ -81,18 +83,18 @@ class Program
                 new { 
                     role = "system", 
                     content = """
-                        Sen yaratıcı bir hikaye yazarısın. 
-                        Hikayeleri SADECE Türkçe yazıyorsun.
-                        Sadece Türkçe karakterler kullanıyorsun.
-                        Başka hiçbir dilde karakter kullanmıyorsun.
-                        Hikayelerde giriş, gelişme ve sonuç bölümleri olmalı.
-                        Karakterler ve mekanlar detaylı anlatılmalı.
-                        Tekrar eden cümleler kullanma.
-                        Her bölüm için belirtilen cümle sayısına uy.
-                        Diyalog ekle.
-                        Duygusal ve fiziksel detaylar kullan.
-                        Hikayeyi akıcı ve ilgi çekici yap.
-                        """
+                              Sen yaratıcı bir hikaye yazarısın. 
+                              Hikayeleri SADECE Türkçe yazıyorsun.
+                              Sadece Türkçe karakterler kullanıyorsun.
+                              Başka hiçbir dilde karakter kullanmıyorsun.
+                              Hikayelerde giriş, gelişme ve sonuç bölümleri olmalı.
+                              Karakterler ve mekanlar detaylı anlatılmalı.
+                              Tekrar eden cümleler kullanma.
+                              Her bölüm için belirtilen cümle sayısına uy.
+                              Diyalog ekle.
+                              Duygusal ve fiziksel detaylar kullan.
+                              Hikayeyi akıcı ve ilgi çekici yap.
+                              """
                 },
                 new { 
                     role = "user", 

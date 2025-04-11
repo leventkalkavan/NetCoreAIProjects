@@ -2,6 +2,8 @@
 using Newtonsoft.Json;
 using UglyToad.PdfPig;
 
+namespace PdfAnalyze;
+
 class Program
 {
     private static readonly string apiKey = "apikey";
@@ -72,11 +74,11 @@ class Program
                     {
                         role = "user",
                         content = $"Aşağıdaki PDF içeriğini analiz et ve özetle. Özellikle şu konulara dikkat et:\n" +
-                                "1. Dokümanın ana konusu ve amacı nedir?\n" +
-                                "2. Önemli bilgiler ve başlıklar neler?\n" +
-                                "3. Varsa öne çıkan bölümler neler?\n" +
-                                "4. Genel değerlendirme ve özet.\n\n" +
-                                $"İçerik:\n{text}"
+                                  "1. Dokümanın ana konusu ve amacı nedir?\n" +
+                                  "2. Önemli bilgiler ve başlıklar neler?\n" +
+                                  "3. Varsa öne çıkan bölümler neler?\n" +
+                                  "4. Genel değerlendirme ve özet.\n\n" +
+                                  $"İçerik:\n{text}"
                     }
                 }
             };

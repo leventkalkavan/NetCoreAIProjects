@@ -1,6 +1,8 @@
 ﻿using System.Text;
-using HtmlAgilityPack;
 using System.Text.Json;
+using HtmlAgilityPack;
+
+namespace WebScraping;
 
 class Program
 {

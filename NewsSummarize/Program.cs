@@ -2,6 +2,8 @@
 using System.Text.Json;
 using System.Xml.Linq;
 
+namespace NewsSummarize;
+
 class Program
 {
     private static readonly string apiKey = "apikey";
